@@ -1,0 +1,58 @@
+.experience
+    padding-top: 120px
+    &__list
+        padding: 60px 0 0 65px
+        display: grid
+        grid-template-columns: repeat(2, 425px)
+        justify-content: start
+        column-gap: 135px
+        &-item
+            padding-left: 50px
+            &-name
+                position: relative
+                &:before
+                    content: ''
+                    display: block
+                    width: 15px
+                    height: 15px
+                    background: $main-color
+                    border-radius: 100%
+                    position: absolute
+                    left: -50px
+                    top: 50%
+                    transform: translateY(-50%)
+            ul
+                list-style-type: none
+            &-descr
+                padding-top: 45px
+                position: relative
+                &::before
+                    content:''
+                    display: block
+                    width: 1px
+                    background: #000
+                    height: calc(100% + 7.5px)
+                    position: absolute
+                    left: -43px
+                    top: -7.5px
+                &::after
+                    content: ''
+                    display: block
+                    width: 42px
+                    height: 1px
+                    background: #000
+                    position: absolute
+                    top: 63px
+                    left: -42px
+
+                p
+                    margin-top: 12px
+            &-head
+                display: flex
+                justify-content: flex-start
+                .skills-icon
+                    margin-right: 20px
+        
+
+
+        

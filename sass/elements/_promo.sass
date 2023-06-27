@@ -1,0 +1,32 @@
+.promo
+    min-height: 100vh
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover
+    padding-top: 205px
+    position: relative
+    &__subtitle
+        padding-left: 10px
+        position: relative
+        z-index: 2
+        &::before
+            content: ''
+            @include orange-circle
+            top: -28%
+            left: 0
+            z-index: -1
+    &__title
+        max-width: 520px
+        margin-top: 9px
+    &__links
+        margin-top: 25px
+        width: 275px
+        height: 45px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__link
+        text-decoration: none
+        font-size: 14px
+        line-height: 21px
+        padding: 12px 25px
+        &_active
+            background: $main-color

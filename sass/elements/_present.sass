@@ -1,0 +1,27 @@
+.present
+    padding-top: 120px
+    transition: all 2s
+.present-self
+    display: grid
+    grid-template: repeat(2, minmax(280px, auto)) / 400px 570px
+    gap: 40px 70px
+    &__photo
+        grid-row: 1 / 3
+        background: url('../img/main_photo.jpg') no-repeat center/cover
+    &__desription
+        padding-top: 6px
+    &__desription-title
+        margin-top: 6px
+    &__desription-me
+        margin-top: 20px
+        font-weight: 500
+    &__work
+        display: grid
+        grid-template: repeat(2, minmax(116px, auto)) / repeat(2, minmax(260px, auto))
+        gap: 20px 50px
+    &__skills
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+    &__skills-descr
+        width: 200px

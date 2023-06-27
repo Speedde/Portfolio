@@ -1,0 +1,30 @@
+.price
+    margin: 66px
+    &__items
+        padding: 60px 50px 0 50px
+        display: grid
+        grid-template: repeat(3, minmax(44px, auto)) / repeat(auto-fit, 370px)
+        align-items: center
+        gap: 15px 300px
+    &__item
+        padding-left: 25px
+        display: grid
+        grid-template: repeat(2, minmax(22px, auto)) / 1.5fr 1fr
+        align-items: start
+        &-title
+            position: relative
+            &::before
+                content: ''
+                display: block
+                width: 15px
+                height: 15px
+                background: $main-color
+                border-radius: 100%
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: -25px
+        &-pay
+            justify-self: end
+        &-subtitle
+            grid-column: 1 / 3
